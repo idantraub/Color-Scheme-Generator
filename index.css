@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3{
+margin: 0;
+padding: 0;
+}
+
+h3{
+    font-size: 1em;
+}
+
 html,body{
     margin: 0%;
     padding: 0;
@@ -18,24 +27,70 @@ body{
     align-items: center;
 }
 
+
 header{
     padding: 1em 2em 2em 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    width: 80vw;
 }
+
+
+header *{
+    border: 1px solid #D1D5DB;
+}
+
+select{
+    width:25vw;
+    text-align: start;
+    padding: 0.5em;
+ }
+select::open{
+    background-color: white;
+}
+
+#get-Color-btn{
+    background-color: white;
+    padding: 0.5em; 
+}
+ 
+.color-selector{
+    width: 10vw;
+    height: 5vh; 
+}
+
+/*-- Main section --*/
+
 
 .colors-container{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     gap: 0;
+    width: 100vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
  
 
 }
 .color-container
 {
-    
+    height: 50vh;
+    text-align: center;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-palette-img{
+    height: 45vh;
+    width:20vw;
 }
 
 
