@@ -15,9 +15,6 @@ async function handleColorBtnClick()
     .then(data=>{
         generateColorsFromData(data.colors)
         })
-
-    
-
 }
 
 
@@ -25,7 +22,10 @@ function generateColorsFromData(colorsArray)
 {
     let htmlString = ''
     colorsArray.forEach(color => {
+        htmlString+=`<div class="color-container">`
         htmlString+=`<img src=${color.image.bare} class="color-palette-img">`
+        htmlString+=`<h3>${color.hex.value}</h3>`
+        htmlString+='</div>'
     })
     document.getElementById("colors-container").innerHTML=htmlString
 }
