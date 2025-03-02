@@ -86,6 +86,8 @@ select::open{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    color: #2B283A;
+    font-size: 0.75em;
 }
 
 .color-palette-img{
